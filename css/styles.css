@@ -78,32 +78,44 @@ footer {
   border-radius: 10px;       /* Bordes redondeados */
 }
 /* Estilo de la sección completa */
-.habilidades {
-  background-color: white; /* Fondo amarillo suave */
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 8px;
-  max-width: 350px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+/* Contenedor general de la sección de habilidades */
+.habilidad {
+  margin-bottom: 15px;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
 }
 
-/* Contenedor Grid */
-.grid-habilidades {
-  display: grid; /* Activa el sistema grid */
-  grid-template-columns: repeat(2, 1fr); /* 3 columnas iguales */
-  gap: 5px; /* Espacio entre los elementos */
-  margin-top: 10px;
-}
-
-/* Cada habilidad individual */
-.grid-habilidades div {
-  background-color: #cce5ff; /* Azul claro */
-  padding: 3px;
-  text-align: center;
+/* Texto de cada habilidad */
+.habilidad span {
+  display: block;
   font-weight: bold;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 5px;
 }
+
+/* Barra contenedora */
+.barra {
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+}
+
+/* Barra de progreso */
+.nivel {
+  height: 100%;
+  background-color: #0077cc;
+  border-radius: 10px;
+}
+
+/* Porcentaje por habilidad */
+.nivel.html { width: 85%; }
+.nivel.css { width: 75%; }
+.nivel.js { width: 65%; }
+.nivel.git { width: 60%; }
+.nivel.responsive { width: 70%; }
+.nivel.teamwork { width: 90%; }
+
 
 /* Contenedor de todos los proyectos (flex para poner en fila) */
 .proyectos {
