@@ -1,0 +1,136 @@
+</html>
+<head>
+  <header>
+  	<h1>Hola, soy Tufiu</h1>
+  	<h2>Principiante en desarrollo web</h2>
+  	<link rel="stylesheet" href="css/styles.css">
+  </header>
+</head>
+<body>
+<main>
+  <section class="perfil">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" alt="io" class="foto-perfil">
+    <p>Un pequeño texto sobre mí. Soy curioso, creativo y me interesa aprender sobre desarrollo web.</p>
+    
+<!-- Caja de texto donde el usuario escribe su nombre -->
+<input class="input" type="text" id="nombreUsuario" placeholder="Quien Eres?">
+
+<!-- Botón que activará el saludo -->
+<button class="clickaqui" onclick="saludar()">Enviar</button>
+
+<!-- Donde mostraremos el mensaje -->
+<p id="mensajeSaludo"></p>
+
+  </section>
+
+  <section class="intereses">
+  <!-- Título de la sección -->
+  <h2>Mis intereses</h2>
+
+  <!-- Lista de intereses con emojis -->
+ <div class="intereses-grid">
+  <ul>
+    <li>🎮 Videojuegos</li>
+    <li>🎧 Música</li>
+  </ul>
+  <ul>
+    <li>💻 Programar</li>
+    <li>📸 Fotografía</li>
+   </ul>
+ </div>
+</section>
+<section class="portafolio">
+  <!-- SECCIÓN DE HABILIDADES CON GRID -->
+<section class="habilidades">
+  <h2>Mis Habilidades</h2>
+
+  <div class="grid-habilidades">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Git</div>
+    <div>Responsive Design</div>
+    <div>Trabajo en equipo</div>
+  </div>
+</section>
+
+  <h2>Mis Proyectos</h2>
+
+  <div class="proyectos">
+    <!-- Proyecto 1 -->
+    <div class="proyecto">
+      <h3>Mini Landing Page</h3>
+      <p>Un sitio simple de presentación.</p>
+      <a href="#">Ver proyecto</a>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="proyecto">
+      <h3>Mi Blog Personal</h3>
+      <p>Blog hecho con HTML y CSS.</p>
+      <a href="#">Ver proyecto</a>
+    </div>
+  </div>
+</section>
+  
+<!-- Sección de tarjeta de presentación -->
+<section class="tarjeta">
+  
+  <!-- Imagen circular del perfil -->
+  <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" 
+       alt="Mi foto" 
+       class="tarjeta-img">
+  
+  <!-- Texto y enlace dentro de la tarjeta -->
+  <div class="tarjeta-info">
+    <h3>Tufiu</h3> <!-- Nombre -->
+    <p>Desarrollador Web en formación</p> <!-- Descripción -->
+    
+    <!-- Botón con enlace a tu Instagram -->
+    <a href="https://instagram.com/istufiu" 
+       target="_blank" 
+       class="boton">Visitar Instagram</a>
+    <!-- Botón que el usuario puede presionar -->
+<!-- Botón para activar la función -->
+<button class="clickaqui" onclick="mostrarMensaje()">No click </button>
+
+<!-- Lugar donde mostraremos el mensaje -->
+<p id="saludo"></p>
+  </div>
+</section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+<section class="formulario">
+  <h2>Contáctame</h2>
+
+  <!-- Inicio del formulario -->
+  <form id="formContacto" action="#" method="post">
+    
+    <!-- Campo para el nombre -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" >
+
+    <!-- Campo para el correo electrónico -->
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" >
+
+    <!-- Campo para mensaje -->
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" ></textarea>
+
+    <!-- Botón de envío -->
+    <button type="submit">Enviar</button>
+    <p id="mensajeFinal"></p>
+
+
+  </form>
+</section>
+
+</main>
+
+ <footer>
+   <p>© 2025 tufiu — Todos los derechos reservados</p>
+ </footer>
+ <script src="js/main.js"></script> 
+</body>
+</html>

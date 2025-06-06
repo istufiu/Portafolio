@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  
+body {
+  background-color: #e6f0fe;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background-color: lightgrey;
+  color: black;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.perfil {
+  padding: 20px;
+}
+
+.foto-perfil {
+  width: 120px;
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  margin-bottom: 15px;
+}
+
+a {
+  color: #2a0ffe;
+  text-decoration: none;
+  font-size: 19px;
+  bottom: 10px;
+  display: block;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.intereses-grid{
+  display: flex; /*Las listas estaran lado a lado*/
+  justify-content: center; /*Centra el bloque horizontalmente*/
+  gap: 10px; /*Espacio entre las columnas*/
+  flex-wrap: wrap; /*Si no caben un una linea baja*/
+}
+
+/*Las listas individuales*/
+.intereses-grid ul{
+  list-style: none; /* Quita los puntos normales */
+  padding: 0;
+}
+
+/*Cada interes*/
+.intereses-grid li{
+  font-size: 20px; /*Tamaño de la letra*/
+  margin-bottom: 10px; /*Margen entre c/u*/
+}
+
+/* Estilo general de la sección de portafolio */
+.portafolio {
+  background-color: #fff5e1; /* Color de fondo suave */
+  padding: 30px;             /* Espacio interno */
+  margin-top: 30px;          /* Espacio arriba respecto a lo anterior */
+  border-radius: 10px;       /* Bordes redondeados */
+}
+/* Estilo de la sección completa */
+.habilidades {
+  background-color: white; /* Fondo amarillo suave */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 350px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Contenedor Grid */
+.grid-habilidades {
+  display: grid; /* Activa el sistema grid */
+  grid-template-columns: repeat(2, 1fr); /* 3 columnas iguales */
+  gap: 5px; /* Espacio entre los elementos */
+  margin-top: 10px;
+}
+
+/* Cada habilidad individual */
+.grid-habilidades div {
+  background-color: #cce5ff; /* Azul claro */
+  padding: 3px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Contenedor de todos los proyectos (flex para poner en fila) */
+.proyectos {
+  display: flex;             /* Activa diseño en fila */
+  flex-wrap: wrap;           /* Permite que baje si no cabe */
+  justify-content: center;   /* Centra horizontalmente */
+  gap: 20px;                 /* Espacio entre tarjetas */
+}
+
+/* Estilo para cada tarjeta de proyecto */
+.proyecto {
+  background-color: #ffffff;           /* Fondo blanco */
+  border: 1px solid #ccc;              /* Borde gris claro */
+  padding: 20px;                       /* Espacio interno */
+  width: 250px;                        /* Ancho fijo de la tarjeta */
+  border-radius: 8px;                  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Título de cada proyecto */
+.proyecto h3 {
+  margin-top: 0;     /* Quita espacio arriba */
+  font-size: 20px;   /* Tamaño del texto */
+}
+
+/* Descripción del proyecto */
+.proyecto p {
+  font-size: 16px;   /* Tamaño del texto */
+  color: #666;       /* Color gris claro */
+}
+
+/* Enlace que lleva al proyecto */
+.proyecto a {
+  display: inline-block;  /* Para poder poner márgenes */
+  margin-top: 10px;       /* Espacio arriba del enlace */
+  color: #0077cc;         /* Azul */
+  text-decoration: none;  /* Sin subrayado */
+  font-weight: bold;      /* Texto en negrita */
+}
+
+
+
+/* Contenedor de la tarjeta */
+.tarjeta {
+  display: flex; /* Activa el modo flexible en esta sección */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 20px; /* Espacio entre la imagen y el contenido */
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 20px; /* Espacio interior */
+  margin: 20px auto; /* Margen superior/inferior + centrado horizontal */
+  max-width: 600px; /* Ancho máximo de la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Imagen dentro de la tarjeta */
+.tarjeta-img {
+  width: 100px; /* Ancho fijo */
+  height: 100px; /* Alto fijo */
+  border-radius: 50%; /* Hace la imagen redonda */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+/* Caja con texto y botón */
+.tarjeta-info {
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilo del botón */
+.boton {
+  display: inline-block; /* Para que tenga ancho y alto como botón */
+  margin-top: 10px; /* Espacio encima del botón */
+  padding: 8px 16px; /* Espacio interno del botón */
+  background-color: #0077cc; /* Color azul */
+  color: white; /* Texto blanco */
+  text-decoration: none; /* Quita subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de fuente */
+}
+.boton:hover {
+  background-color: #005fa3; /* Azul más oscuro */
+}
+
+/* Estilos generales para la sección del formulario */
+.formulario {
+  background-color: #f0f8ff; /* Fondo azul claro */
+  padding: 15px; /* Espaciado interno */
+  max-width: 300px; /* Ancho máximo */
+  margin: 1px auto; /* Centrado vertical con espacio arriba/abajo */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Estilo para los textos de cada campo ("Nombre", "Correo", etc.) */
+.formulario label {
+  display: block; /* Hace que cada etiqueta esté en su propia línea */
+  margin-top: 1px; /* Espacio superior entre campos */
+  font-weight: bold; /* Texto en negrita */
+  text-align: left; /* Alineado a la izquierda */
+}
+
+/* Estilo para los inputs de texto y el textarea */
+.formulario input,
+.formulario textarea {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 1px; /* Espaciado interno del campo */
+  margin-top: 5px; /* Espacio entre la etiqueta y el campo */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes ligeramente redondeados */
+  font-size: 14px; /* Tamaño del texto */
+}
+
+/* Estilo para el botón de enviar */
+.formulario button {
+  margin-top: 1px; /* Espacio arriba del botón */
+  margin-bottom: 1px; /* Espacio abajo del boton*/
+  background-color: #0077cc; /* Azul medio */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano al pasar por encima */
+}
+
+/* Efecto al pasar el mouse por el botón */
+.formulario button:hover {
+  background-color: #005fa3; /* Azul más oscuro */
+}
+
+/* 💡 Media Query: Estilos solo para pantallas de 600px o menos (celulares) */
+@media (max-width: 600px) {
+  .grid-habilidades {
+    grid-template-columns: 1fr; /* En lugar de 3 columnas, 1 sola */
+  }
+
+  .formulario {
+    padding: 15px; /* Reduce espaciado en móvil */
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 16px; /* Tamaño de letra más grande para móvil */
+  }
+}
+
+.clickaqui{
+  padding: 15px; /*Reduce el espacio en movil*/
+  margin-top: 1px; /* Espacio arriba del botón */
+  margin-bottom: 1px; /* Espacio abajo del boton*/
+  background-color: #0077cc; /* Color azul */
+  color: white; /* Texto blanco */
+  padding: 10px 10px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano al pasar por encima */
+  margin: 0px auto; /* Margen superior/inferior + centrado horizontal */ 
+  
+}
+/* Efecto al pasar el mouse por el botón */
+.clickaqui:hover {
+  background-color: #005fa3; /* Azul más oscuro */
+}
+
+.input{
+ 
+ border-radius: 5px; /* Bordes redondeados */
+ font-weight: bold; /* Texto en negrita */
+}
+
+#mensajeSaludo {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
