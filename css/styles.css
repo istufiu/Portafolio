@@ -158,7 +158,6 @@ footer {
 /*Estilo de las Tarjetas (cv y presentacion)*/
 .Tarjetas {
   display: flex;             /* Activa diseño en fila */
-  flex-wrap: wrap;           /* Permite que baje si no cabe */
   justify-content: center;   /* Centra horizontalmente */
   gap: 20px;                 /* Espacio entre tarjetas */
 }
