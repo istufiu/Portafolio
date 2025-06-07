@@ -80,24 +80,24 @@ footer {
 /* Estilo de la sección completa */
 /* Contenedor general de la sección de habilidades */
 .habilidad {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: left;
-  max-width: 400px;
-  margin: 0 auto 20px auto;
+  max-width: 300px;
+  margin: 0 auto 10px auto;
 }
 
 /* Texto de cada habilidad */
 .habilidad span {
   display: block;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 /* Barra contenedora */
 .barra {
   background-color: #ddd;
   border-radius: 10px;
-  height: 20px;
+  height: 10px;
   overflow: hidden;
 }
 
@@ -105,14 +105,14 @@ footer {
 .nivel {
   height: 100%;
   background-color: #0077cc;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* Porcentaje por habilidad */
-.nivel.html { width: 85%; }
-.nivel.css { width: 75%; }
-.nivel.js { width: 65%; }
-.nivel.git { width: 60%; }
+.nivel.html { width: 20%; }
+.nivel.css { width: 15%; }
+.nivel.js { width: 10%; }
+.nivel.git { width: 35%; }
 .nivel.responsive { width: 70%; }
 .nivel.teamwork { width: 90%; }
 
