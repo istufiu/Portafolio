@@ -158,8 +158,16 @@ footer {
 
 /* Estilos generales para la sección del currículum */
 .curriculum {
-  text-align: center;       /* Centra todo el contenido */
-  margin: 50px auto;        /* Agrega espacio arriba y abajo, centra horizontalmente */
+  display: flex; /* Activa el modo flexible en esta sección */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 20px; /* Espacio entre la imagen y el contenido */
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 20px; /* Espacio interior */
+  margin: 20px auto; /* Margen superior/inferior + centrado horizontal */
+  max-width: 600px; /* Ancho máximo de la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 /* Estilo visual del botón de descarga */
