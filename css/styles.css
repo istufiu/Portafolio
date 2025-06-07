@@ -172,14 +172,14 @@ footer {
 
 /* Estilo visual del botón de descarga */
 .boton-cv {
-  display: inline-block;         /* Permite aplicar padding y margen como si fuera un botón */
-  padding: 12px 24px;            /* Espaciado interno del botón */
-  background-color: #4CAF50;     /* Color de fondo: verde */
-  color: white;                  /* Color del texto: blanco */
-  text-decoration: none;         /* Quita el subrayado típico de los enlaces */
-  border-radius: 8px;            /* Bordes redondeados */
-  font-weight: bold;            /* Texto en negrita */
-  transition: background-color 0.3s ease; /* Efecto suave al cambiar de color */
+   display: inline-block; /* Para que tenga ancho y alto como botón */
+  margin-top: 10px; /* Espacio encima del botón */
+  padding: 8px 16px; /* Espacio interno del botón */
+  background-color: #0077cc; /* Color azul */
+  color: white; /* Texto blanco */
+  text-decoration: none; /* Quita subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de fuente */
 }
 
 /* Cambios cuando el mouse pasa sobre el botón */
