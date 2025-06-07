@@ -155,6 +155,12 @@ footer {
   text-decoration: none;  /* Sin subrayado */
   font-weight: bold;      /* Texto en negrita */
 }
+/*Estilo de las Tarjetas (cv y presentacion)*/
+.Tarjetas
+  display: flex;             /* Activa diseño en fila */
+  flex-wrap: wrap;           /* Permite que baje si no cabe */
+  justify-content: center;   /* Centra horizontalmente */
+  gap: 20px;                 /* Espacio entre tarjetas */
 
 /* Estilos generales para la sección del currículum */
 .curriculum {
