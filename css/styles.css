@@ -156,6 +156,28 @@ footer {
   font-weight: bold;      /* Texto en negrita */
 }
 
+/* Estilos generales para la sección del currículum */
+.curriculum {
+  text-align: center;       /* Centra todo el contenido */
+  margin: 50px auto;        /* Agrega espacio arriba y abajo, centra horizontalmente */
+}
+
+/* Estilo visual del botón de descarga */
+.boton-cv {
+  display: inline-block;         /* Permite aplicar padding y margen como si fuera un botón */
+  padding: 12px 24px;            /* Espaciado interno del botón */
+  background-color: #4CAF50;     /* Color de fondo: verde */
+  color: white;                  /* Color del texto: blanco */
+  text-decoration: none;         /* Quita el subrayado típico de los enlaces */
+  border-radius: 8px;            /* Bordes redondeados */
+  font-weight: bold;            /* Texto en negrita */
+  transition: background-color 0.3s ease; /* Efecto suave al cambiar de color */
+}
+
+/* Cambios cuando el mouse pasa sobre el botón */
+.boton-cv:hover {
+  background-color: #45a049; /* Cambia el verde por uno más oscuro al pasar el mouse */
+}
 
 
 /* Contenedor de la tarjeta */
