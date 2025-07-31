@@ -31,9 +31,12 @@ perfil {
   padding: 30px;
 }
 
-foto-perfil {
-  width: 120px;
-  border-radius: 50%;
+.foto-perfil {
+  width: 100px;              /* más pequeña */
+  height: 100px;             /* alto igual para hacerlo cuadrado */
+  border-radius: 50%;        /* la hace completamente circular */
+  border: 4px solid #ffffff; /* borde blanco (puedes cambiar el color) */
+  object-fit: cover;         /* asegura que no se deforme */
   margin-bottom: 15px;
 }
 
