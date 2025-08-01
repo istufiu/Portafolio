@@ -1,33 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">');
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background-color: #0e0e0e;
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  background-color: #000000;
+  font-family: 'JetBrains Mono', monospace;
   color: #f1f1f1;
   margin: 0;
   text-align: center;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s; 
 }
 
 header {
-  background-color: #1a1a1a;
+
   color: white;
   padding: 40px 0;
 }
 
+.fondo-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Video como fondo */
+.video-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+   background: linear-gradient(to top, rgba(0, 0, 0, 6), transparent);
+}
+
+/* Capa semitransparente encima del video */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* oscurece sin ocultar */
+  z-index: -1;
+}
+
+/* Encabezado encima del fondo */
+.fondo-video header {
+  z-index: 1;
+  text-align: center;
+}
+
+.fondo-video h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.fondo-video h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* Botón CTA */
+.cta-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+.flecha-abajo {
+  display: inline-block;
+  margin-top: 6rem;
+  animation: bounce 2s infinite;
+  transition: transform 0.3s;
+  color: white;
+  z-index: 1;
+}
+
+.flecha-abajo:hover {
+  transform: scale(1.2);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(6px);
+  }
+
+  60% {
+    transform: translateY(3px);
+  }
+}
+
 h1 {
   margin: 0;
-  font-size: 100px;
+  font-size: 50px;
   color: #ffffff;
 }
 
 h2 {
-  font-size: 100px;
+  font-size: 50px;
   margin-top: 10px;
   color: #ffffff;
 }
 
-perfil {
+.perfil {
   padding: 30px;
 }
 
@@ -40,13 +141,6 @@ perfil {
   margin-bottom: 15px;
 }
 
-a {
-  color: #6c63ff;
-  text-decoration: none;
-  font-size: 19px;
-  display: block;
-  margin-top: 10px;
-}
 
 footer {
   background-color: #111;
@@ -55,6 +149,59 @@ footer {
   margin-top: 40px;
   font-size: 14px;
 }
+
+.experiencias{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.experiencia {
+  width: 400px;
+  overflow-wrap: break-word; /* evita desbordamientos */
+  gap: 1.5rem;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.09);
+  border: 1px solid #333;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.experiencia:hover {
+  transform: translateY(-5px);
+}
+
+#experiencia {
+  background-image: url("../assets/fondo.png");
+  background-size: auto 40%;              /* Imagen más pequeña (40% de altura) */
+  background-position: center 60%;        /* Más arriba del fondo (ajusta el % según se necesite) */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+#experiencia::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 6), transparent);
+  z-index: 0;
+}
+
+#experiencia * {
+  position: relative;
+  z-index: 1;
+}
+
 
 .intereses-grid {
   display: flex;

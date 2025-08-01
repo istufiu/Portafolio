@@ -1,33 +1,4 @@
-// Declaramos una función que dice hola
-function saludar() {
-  console.log("¡Hola,Bienvenidos a mi portafolio 😊");
-}
-
-// Llamamos a la función para que se ejecute
-saludar();
-
-
-// Declaramos una variable con el nombre "nombre"
-let nombre = "Tufiu"; // guarda tu nombre
-
-// Otra variable con un número
-let edad = 25; // puedes cambiar este número
-
-// Mostramos el contenido de las variables en consola
-console.log("Tu nombre es: " + nombre); // concatena texto + variable
-console.log("Tienes " + edad + " años");
-
-// Esta función recibe un nombre y una edad como parámetros
-function presentacion(nombre, edad) {
-  // Muestra un mensaje usando los datos recibidos
-  console.log("Hola, soy " + nombre + " y tengo " + edad + " años.");
-}
-
-// Llamamos a la función pasando valores reales
-presentacion("Tufiu", 24);
-presentacion("Ana", 30);
-
-// Esta función cambia el contenido del párrafo con id="saludo"
+s
 function mostrarMensaje() {
   // Seleccionamos el elemento por su ID
   let parrafo = document.getElementById("saludo");

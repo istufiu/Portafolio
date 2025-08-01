@@ -11,41 +11,52 @@
 <body>
 
   <!-- Encabezado de la página -->
+ <section class="fondo-video">
+  <video autoplay muted loop playsinline class="video-fondo">
+    <source src="assets/fondo.mp4" type="video/mp4">
+    Tu navegador no soporta el video HTML5.
+  </video>
+
+  <!-- Overlay oscuro -->
+  <div class="overlay"></div>
+
   <header>
-    <h1>Hola, soy Tufiu</h1>
-    <h2>Principiante en desarrollo web</h2>
+    <h1>Is Tufiu</h1>
+    <h2>Desarrollador Web</h2>
+ <a href="#experiencia" class="flecha-abajo" aria-label="Ir a experiencia">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="2" x2="12" y2="19"/>
+    <polyline points="19 12 12 19 5 12"/>
+    </svg>
+</a>
   </header>
+</section>
+
 <main>
-  <section class="perfil">
-    <img src="assets/me.jpg" alt="io" class="foto-perfil">
-    <p>Un pequeño texto sobre mí. Soy curioso, creativo y me interesa aprender sobre desarrollo web.</p>
-    
-<!-- Caja de texto donde el usuario escribe su nombre -->
-<input class="input" type="text" id="nombreUsuario" placeholder="Quien Eres?">
 
-<!-- Botón que activará el saludo -->
-<button class="clickaqui" onclick="saludar()">Enviar</button>
+  <section id="experiencia">
+  <h1>Mi Experiencia</h1>
 
-<!-- Donde mostraremos el mensaje -->
-<p id="mensajeSaludo"></p>
+  <div class="experiencias">
+    <div class="experiencia">
+      <h4>Desarrollo Web</h4>
+      <p>He desarrollado proyectos personales donde implementé sitios web modernos y responsivos. 
+      Me he enfocado en ofrecer una buena experiencia de usuario utilizando HTML, CSS, JavaScript y control de versiones con Git.</p>
+    </div>
 
-  </section>
+    <div class="experiencia">
+      <h4>Implementación de IA's</h4>
+      <p>He explorado la aplicación de inteligencia artificial en automatización de tareas y análisis de datos,
+      enfocándome en entender su integración dentro de entornos web y herramientas digitales.</p>
+    </div>
 
-  <section class="intereses">
-  <!-- Título de la sección -->
-  <h2>Mis intereses</h2>
+    <div class="experiencia">
+      <h4>Próximamente</h4>
+      <p>Aquí añadiré una experiencia futura relacionada con nuevas tecnologías.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Lista de intereses con emojis -->
- <div class="intereses-grid">
-  <ul>
-    <li>🎮 Videojuegos</li>
-    <li>🎧 Música</li>
-  </ul>
-  <ul>
-    <li>💻 Programar</li>
-    <li>📸 Fotografía</li>
-   </ul>
- </div>
 </section>
 <section class="portafolio">
   <!-- SECCIÓN DE HABILIDADES CON GRID -->
@@ -97,7 +108,7 @@
 </div>
 
   </div>
-</section>
+<section id="proyectos">
 
   <h2>Mis Proyectos</h2>
 
