@@ -1,245 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio de Tufiu</title>
-
-  <!-- Enlace al archivo CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Fuente JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- Encabezado de la página -->
- <section class="fondo-video">
+<!-- Sección de video de fondo con encabezado -->
+<section class="fondo-video">
   <video autoplay muted loop playsinline class="video-fondo">
     <source src="assets/fondo.mp4" type="video/mp4">
     Tu navegador no soporta el video HTML5.
   </video>
-
-  <!-- Overlay oscuro -->
   <div class="overlay"></div>
-
   <header>
     <h1>Is Tufiu</h1>
     <h2>Desarrollador Web</h2>
- <a href="#experiencia" class="flecha-abajo" aria-label="Ir a experiencia">
-    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <line x1="12" y1="2" x2="12" y2="19"/>
-    <polyline points="19 12 12 19 5 12"/>
-    </svg>
-</a>
+    <a href="#experiencia" class="flecha-abajo" aria-label="Ir a experiencia">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="2" x2="12" y2="19"/>
+        <polyline points="19 12 12 19 5 12"/>
+      </svg>
+    </a>
   </header>
 </section>
 
 <main>
-
+  <!-- Sección de experiencia -->
   <section id="experiencia">
-  <h1>Mi Experiencia</h1>
+    <h1>Mi Experiencia</h1>
+    <div class="experiencias">
+      <!-- Experiencia 1 -->
+      <div class="experiencia">
+        <h4>Desarrollo Web</h4>
+        <p>He desarrollado proyectos personales utilizando HTML, CSS, JavaScript y Git, enfocándome en sitios responsivos y experiencias de usuario.</p>
+      </div>
+      <!-- Experiencia 2 -->
+      <div class="experiencia">
+        <h4>Implementación de IA's</h4>
+        <p>Exploración de la IA en automatización de tareas y análisis de datos dentro de entornos web y herramientas digitales.</p>
+      </div>
+      <!-- Experiencia futura -->
+      <div class="experiencia">
+        <h4>Próximamente</h4>
+        <p>Añadiré una experiencia relacionada con nuevas tecnologías.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="experiencias">
-    <div class="experiencia">
-      <h4>Desarrollo Web</h4>
-      <p>He desarrollado proyectos personales donde implementé sitios web modernos y responsivos. 
-      Me he enfocado en ofrecer una buena experiencia de usuario utilizando HTML, CSS, JavaScript y control de versiones con Git.</p>
+    <!-- Sección de habilidades y proyecto actual -->
+  <section class="seccion-proyecto-habilidades">
+    <!-- Habilidades a la izquierda -->
+    <div class="habilidades">
+      <h3>Habilidades</h3>
+      <div class="habilidad"><span>HTML</span><div class="barra"><div class="nivel html"></div></div></div>
+      <div class="habilidad"><span>CSS</span><div class="barra"><div class="nivel css"></div></div></div>
+      <div class="habilidad"><span>JavaScript</span><div class="barra"><div class="nivel js"></div></div></div>
+      <div class="habilidad"><span>Git</span><div class="barra"><div class="nivel git"></div></div></div>
+      <div class="habilidad"><span>Responsive Design</span><div class="barra"><div class="nivel responsive"></div></div></div>
+      <div class="habilidad"><span>Trabajo en equipo</span><div class="barra"><div class="nivel teamwork"></div></div></div>
+    </div>
+     <!-- Proyecto a la derecha -->
+    <div class="proyecto-actual">
+      <h2>Mi Proyecto Actual</h2>
+        <div class="proyecto-info">
+        <h3>Portafolio Interactivo</h3>
+        <!-- Aquí puedes agregar imagen o descripción -->
+      </div>
+    </div>      
+  </section>
+
+  <!-- Sección de proyectos -->
+  <section id="proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="proyectos">
+      <!-- Proyecto 1 -->
+      <div class="proyecto">
+        <img src="https://via.placeholder.com/300x200" alt="Captura del proyecto" class="proyecto-img">
+        <div class="proyecto-info">
+          <h3>Mini Landing Page</h3>
+          <p>Un sitio simple de presentación.</p>
+          <ul class="tecnologias"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="proyecto-links">
+            <a href="#" target="_blank">Ver Demo</a>
+            <a href="#" target="_blank">Código en GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="proyecto">
+        <img src="https://via.placeholder.com/300x200" alt="Captura del proyecto" class="proyecto-img">
+        <div class="proyecto-info">
+          <h3>Mi Blog Personal</h3>
+          <p>Blog hecho con HTML y CSS.</p>
+          <ul class="tecnologias"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="proyecto-links">
+            <a href="#" target="_blank">Ver Demo</a>
+            <a href="#" target="_blank">Código en GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de CV y tarjeta de presentación -->
+  <section class="Tarjetas">
+    <div class="curriculum">
+      <h2>Mi Currículum</h2>
+      <p>Podés descargar una copia de mi CV actualizado en formato PDF.</p>
+      <a href="assets/cv-tufiu.pdf" download class="boton-cv">Descargar CV</a>
     </div>
 
-    <div class="experiencia">
-      <h4>Implementación de IA's</h4>
-      <p>He explorado la aplicación de inteligencia artificial en automatización de tareas y análisis de datos,
-      enfocándome en entender su integración dentro de entornos web y herramientas digitales.</p>
+    <div class="tarjeta">
+      <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" alt="Mi foto" class="tarjeta-img">
+      <div class="tarjeta-info">
+        <h3>Tufiu</h3>
+        <p>Desarrollador Web en formación</p>
+        <a href="https://instagram.com/istufiu" target="_blank" class="boton">Visitar Instagram</a>
+      </div>
     </div>
+  </section>
 
-    <div class="experiencia">
-      <h4>Próximamente</h4>
-      <p>Aquí añadiré una experiencia futura relacionada con nuevas tecnologías.</p>
-    </div>
-  </div>
-</section>
-
-</section>
-<section class="portafolio">
-  <!-- SECCIÓN DE HABILIDADES CON GRID -->
-<section class="habilidades">
-  <h2>Mis Habilidades</h2>
-
-  <div class="grid-habilidades">
-    <!-- Contenedor de cada habilidad con su barra de nivel -->
-<div class="habilidad">
-  <span>HTML</span>
-  <div class="barra">
-    <div class="nivel html"></div> <!-- Ancho ajustado por CSS -->
-  </div>
-</div>
-
-<div class="habilidad">
-  <span>CSS</span>
-  <div class="barra">
-    <div class="nivel css"></div>
-  </div>
-</div>
-
-<div class="habilidad">
-  <span>JavaScript</span>
-  <div class="barra">
-    <div class="nivel js"></div>
-  </div>
-</div>
-
-<div class="habilidad">
-  <span>Git</span>
-  <div class="barra">
-    <div class="nivel git"></div>
-  </div>
-</div>
-
-<div class="habilidad">
-  <span>Responsive Design</span>
-  <div class="barra">
-    <div class="nivel responsive"></div>
-  </div>
-</div>
-
-<div class="habilidad">
-  <span>Trabajo en equipo</span>
-  <div class="barra">
-    <div class="nivel teamwork"></div>
-  </div>
-</div>
-
-  </div>
-<section id="proyectos">
-
-  <h2>Mis Proyectos</h2>
-
-  <div class="proyectos">
-    <!-- Proyecto 1 -->
-<div class="proyecto">
-  <!-- Imagen de portada del proyecto -->
-  <img src="https://via.placeholder.com/300x200" alt="Captura del proyecto" class="proyecto-img">
-  
-  <!-- Contenido textual del proyecto -->
-  <div class="proyecto-info">
-    <h3>Mini Landing Page</h3>
-    <p>Un sitio simple de presentación.</p>
-
-    <!-- Lista de tecnologías -->
-    <ul class="tecnologias">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-
-    <!-- Enlaces a demo o código -->
-    <div class="proyecto-links">
-      <a href="#" target="_blank">Ver Demo</a>
-      <a href="#" target="_blank">Código en GitHub</a>
-    </div>
-  </div>
-</div>
-
-    <!-- Proyecto 2 -->
- <!-- Tarjeta de proyecto mejorada -->
-<div class="proyecto">
-  <!-- Imagen de portada del proyecto -->
-  <img src="https://via.placeholder.com/300x200" alt="Captura del proyecto" class="proyecto-img">
-  
-  <!-- Contenido textual del proyecto -->
-  <div class="proyecto-info">
-    <h3>Mi Blog Personal</h3>
-    <p>Blog hecho con HTML y CSS.</p>
-
-    <!-- Lista de tecnologías -->
-    <ul class="tecnologias">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-
-    <!-- Enlaces a demo o código -->
-    <div class="proyecto-links">
-      <a href="#" target="_blank">Ver Demo</a>
-      <a href="#" target="_blank">Código en GitHub</a>
-    </div>
-  </div>
-</div>
-
-</section>
-<section>
-<div class="Tarjetas">
-<!-- SECCIÓN DE CURRÍCULUM -->
-<div class="curriculum"> <!-- Sección con clase "curriculum" para poder aplicarle estilos -->
-  <h2>Mi Currículum</h2> <!-- Título principal de la sección -->
-
-  <p>Podés descargar una copia de mi CV actualizado en formato PDF.</p> <!-- Texto introductorio -->
-
-  <!-- Enlace para descargar el archivo PDF -->
-  <a href="assets/cv-tufiu.pdf" download class="boton-cv">
-    Descargar CV <!-- Texto que aparece en el botón -->
-  </a>
-</div>
-
-<!-- Sección de tarjeta de presentación -->
-<div class="tarjeta">
-  
-  <!-- Imagen circular del perfil -->
-  <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" 
-       alt="Mi foto" 
-       class="tarjeta-img">
-  
-  <!-- Texto y enlace dentro de la tarjeta -->
-  <div class="tarjeta-info">
-    <h3>Tufiu</h3> <!-- Nombre -->
-    <p>Desarrollador Web en formación</p> <!-- Descripción -->
-    
-    <!-- Botón con enlace a tu Instagram -->
-    <a href="https://instagram.com/istufiu" 
-       target="_blank" 
-       class="boton">Visitar Instagram</a>
-    <!-- Botón que el usuario puede presionar -->
-<!-- Botón para activar la función -->
-<button class="clickaqui" onclick="mostrarMensaje()">No click </button>
-
-<!-- Lugar donde mostraremos el mensaje -->
-<p id="saludo"></p>
-  </div>
-</div>
-</div>
-  
-</section>
-
-  <!-- FORMULARIO DE CONTACTO -->
-<section class="formulario">
-  <h2>Contáctame</h2>
-
-  <!-- Inicio del formulario -->
-  <form id="formContacto" action="#" method="post">
-    
-    <!-- Campo para el nombre -->
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" >
-
-    <!-- Campo para el correo electrónico -->
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" >
-
-    <!-- Campo para mensaje -->
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="4" ></textarea>
-
-    <!-- Botón de envío -->
-    <button type="submit">Enviar</button>
-    <p id="mensajeFinal"></p>
-
-
-  </form>
-</section>
-
+  <!-- Sección de contacto -->
+  <section class="formulario">
+    <h2>Contáctame</h2>
+    <form id="formContacto" action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email">
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+      <button type="submit">Enviar</button>
+      <p id="mensajeFinal"></p>
+    </form>
+  </section>
 </main>
 
- <footer>
-   <p>© 2025 tufiu — Todos los derechos reservados</p>
- </footer>
- <script src="js/main.js"></script> 
+<!-- Footer -->
+<footer>
+  <p>© 2025 Tufiu — Todos los derechos reservados</p>
+</footer>
+
+<!-- Script JS -->
+<script src="js/main.js"></script>
 </body>
 </html>

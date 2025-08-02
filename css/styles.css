@@ -40,7 +40,7 @@ header {
   height: 100%;
   object-fit: cover;
   z-index: -2;
-   background: linear-gradient(to top, rgba(0, 0, 0, 6), transparent);
+  background: linear-gradient(to bottom, transparent, #000000);
 }
 
 /* Capa semitransparente encima del video */
@@ -128,62 +128,91 @@ h2 {
   color: #ffffff;
 }
 
-.perfil {
-  padding: 30px;
+h3 {
+  font-size: 30px;
+  margin-top: 10px;
+  color: #ffffff;
 }
 
-.foto-perfil {
-  width: 100px;              /* más pequeña */
-  height: 100px;             /* alto igual para hacerlo cuadrado */
-  border-radius: 50%;        /* la hace completamente circular */
-  border: 4px solid #ffffff; /* borde blanco (puedes cambiar el color) */
-  object-fit: cover;         /* asegura que no se deforme */
-  margin-bottom: 15px;
-}
-
-
-footer {
-  background-color: #111;
-  color: white;
-  padding: 20px;
-  margin-top: 40px;
-  font-size: 14px;
-}
-
-.experiencias{
+.experiencias {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  text-align: center;
+  gap: 0px;
+  text-align: left;
+  margin-top: 7%;
 }
 
 .experiencia {
-  width: 400px;
-  overflow-wrap: break-word; /* evita desbordamientos */
-  gap: 1.5rem;
-  background-color: #1f1f1f;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.09);
-  border: 1px solid #333;
-  color: #f1f1f1;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  background-color: #111;
+  border: 1px solid #777;
+  padding: 2rem;
+  color: white;
+  transition: transform 0.3s ease;
 }
 
-.experiencia:hover {
-  transform: translateY(-5px);
+
+
+.experiencia h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+/* Subrayado de colores por experiencia */
+.experiencia:nth-child(1) h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: 3px;
+  background-color: #e91e63; /* rosa */
+}
+
+
+.experiencia:nth-child(2) h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: 3px;
+  background-color: #2196f3; /* azul */
+}
+
+.experiencia:nth-child(3) h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: 3px;
+  background-color: #ff5722; /* naranja */
+}
+
+.experiencia p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #ddd;
+  white-space: pre-line;
 }
 
 #experiencia {
   background-image: url("../assets/fondo.png");
-  background-size: auto 40%;              /* Imagen más pequeña (40% de altura) */
-  background-position: center 60%;        /* Más arriba del fondo (ajusta el % según se necesite) */
+  background-size: auto 40%;
+  background-position: center 60%;
   background-repeat: no-repeat;
   background-attachment: scroll;
   padding: 4rem 2rem;
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   z-index: 1;
   color: white;
@@ -193,7 +222,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 6), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
   z-index: 0;
 }
 
@@ -202,34 +231,27 @@ footer {
   z-index: 1;
 }
 
-
-.intereses-grid {
+.miproyecto {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
 }
 
-.intereses-grid ul {
-  list-style: none;
-  padding: 0;
+.habilidades {
+  display:content ;
+  background-color: #000000;
+  align-items: flex-start;
+  width: 300px;
+  padding: 2rem;
+  color: white;
+  transition: transform 0.3s ease;
 }
 
-.intereses-grid li {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.portafolio {
-  background-color: #1a1a1a;
-  padding: 60px 30px;
-  margin-top: 30px;
-  border-radius: 10px;
-}
 
 .habilidad {
   margin-bottom: 10px;
-  text-align: left;
+  text-align: center;
   max-width: 300px;
   margin: 0 auto 10px auto;
 }
@@ -259,7 +281,122 @@ footer {
 .nivel.git { width: 35%; }
 .nivel.responsive { width: 70%; }
 .nivel.teamwork { width: 90%; }
+/* Estilos generales */
+body {
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+  background-color: #000000;
+  color: #f1f1f1;
+}
 
+h1, h2, h3, h4 {
+  margin: 0.5em 0;
+  color: #fff;
+}
+
+/* Fondo de video */
+.fondo-video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-fondo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.flecha-abajo {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+
+/* Experiencia */
+.experiencias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 2rem auto;
+}
+
+.experiencia,.miexperiencia {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+.seccion-proyecto-habilidades {
+  display: flex;
+  justify-content: space-between; /* Deja espacio entre las dos columnas */
+  align-items: center; /* Centrar verticalmente */
+  gap: 50rem; /* Espacio entre columnas */
+  padding: 2rem;
+  max-width: 1700px;
+  margin: 0 auto; /* Centrar sección */
+  background-color:#000000;
+}
+
+.habilidades {
+  flex: 1; /* Ocupa parte proporcional */
+  max-width: 300px; /* Ancho máximo */
+  text-align: left;
+}
+
+.proyecto-actual {
+  flex: 1; /* Ocupa parte proporcional */
+  max-width: 600px; /* Más ancho para proyecto */
+  text-align: left
+}
+
+/* Para que los títulos se vean bien */
+.habilidades h3,
+.proyecto-actual h2 {
+  margin-bottom: 1.5rem;
+}
+
+
+.barra {
+  height: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.nivel {
+  height: 100%;
+  background-color: #6c63ff;
+}
+
+.nivel.html { width: 90%; }
+.nivel.css { width: 80%; }
+.nivel.js { width: 70%; }
+.nivel.git { width: 75%; }
+nivel.responsive { width: 85%; }
+nivel.teamwork { width: 80%; }
+
+/* Proyectos */
 .proyectos {
   display: flex;
   flex-wrap: wrap;
@@ -277,6 +414,7 @@ footer {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
   border: 1px solid #333;
   color: #f1f1f1;
+  max-width: 700px;
 }
 
 .proyecto-img {
@@ -321,16 +459,17 @@ footer {
   background-color: #4b42d7;
 }
 
+/* CV y Tarjeta */
 .Tarjetas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin: 2rem auto;
 }
 
 .curriculum {
   text-align: center;
-  margin: 50px auto;
   padding: 60px 30px;
   background-color: #1a1a1a;
   border-radius: 10px;
@@ -354,12 +493,9 @@ footer {
 .tarjeta {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 20px;
   background-color: #1f1f1f;
-  color: #f1f1f1;
   padding: 20px;
-  margin: 20px auto;
   max-width: 600px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
@@ -391,6 +527,7 @@ footer {
   background-color: #4b42d7;
 }
 
+/* Formulario */
 .formulario {
   background-color: #1a1a1a;
   padding: 30px;
@@ -434,42 +571,32 @@ footer {
   background-color: #4b42d7;
 }
 
+/* Responsive */
 @media (max-width: 600px) {
-  .grid-habilidades {
-    grid-template-columns: 1fr;
+  .experiencias,
+  .proyectos,
+  .Tarjetas {
+    flex-direction: column;
+    align-items: center;
   }
 
   .formulario {
     padding: 15px;
   }
 
-  .formulario input,
-  .formulario textarea {
-    font-size: 16px;
+  .proyecto {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.clickaqui {
-  padding: 10px 20px;
-  background-color: #6c63ff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 0 auto;
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #1f1f1f;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
-.clickaqui:hover {
-  background-color: #4b42d7;
-}
 
-.input {
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-#mensajeSaludo {
-  margin-top: 20px;
-  font-size: 20px;
-  color: #f1f1f1;
-}
